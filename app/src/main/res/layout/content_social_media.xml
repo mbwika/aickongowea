@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="9"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".socialmedia.SocialMediaActivity"
+    tools:showIn="@layout/activity_social_media">
+
+    <GridLayout
+        android:id="@+id/bottom_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:alignmentMode="alignMargins"
+        android:background="@color/cardview_shadow_end_color"
+        android:columnCount="4"
+        android:columnOrderPreserved="false"
+        android:rowCount="1">
+
+        <!--Row 1 -->
+        <!--Column 1 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row1_col1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            tools:ignore="PrivateResource">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/menu_home"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/home" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Row 1 -->
+        <!-- Column 2 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row1_col2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Bible"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/book_read_open" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Row 1 -->
+        <!-- Column 3 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row1_col3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Journal"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/edit_notes" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 1 -->
+        <!-- Column 4 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row1_col4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Download"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/download" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="80dp">-->
+
+<!--        <WebView-->
+<!--            android:id="@+id/webpage_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/company"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/webpage_view"-->
+<!--            android:fontFamily="casual"-->
+<!--            android:importantForAutofill="no"-->
+<!--            android:shadowColor="@color/design_default_color_on_secondary"-->
+<!--            android:shadowDx="2"-->
+<!--            android:shadowRadius="2"-->
+<!--            android:text="@string/website"-->
+<!--            android:textColor="@color/design_default_color_background" />-->
+<!--        -->
+<!--        -->
+<!--    </RelativeLayout>-->
+
+
+
+</LinearLayout>

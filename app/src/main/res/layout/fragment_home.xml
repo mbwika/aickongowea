@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageSliderCard"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/design_default_color_background"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="1" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:background="@color/cardview_shadow_end_color"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:rowCount="3">
+
+        <!--Row 1 -->
+        <!--Column 1 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row_1_col_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            tools:ignore="PrivateResource">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Sermons"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/video" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:shadowColor="@color/text_color"
+                    android:shadowDx="2"
+                    android:shadowRadius="2"
+                    android:text="Sunday Sermons"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Row 1 -->
+        <!-- Column 2 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row_1_col_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="\@Home"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/church" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:shadowColor="@color/text_color"
+                    android:shadowDx="2"
+                    android:shadowRadius="2"
+                    android:text="Home Edition"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Row 1 -->
+        <!-- Column 3 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row_1_col_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Connect"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/people" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:shadowColor="@color/text_color"
+                    android:shadowDx="2"
+                    android:shadowRadius="2"
+                    android:text="Stay In Touch"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 2 -->
+        <!-- Column 1 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row_2_col_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Prayers"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/ic_talking" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:shadowColor="@color/text_color"
+                    android:shadowDx="2"
+                    android:shadowRadius="2"
+                    android:text="Prayers"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 2 -->
+        <!-- Column 2 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row_2_col_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Offerings"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/emblem_money" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:shadowColor="@color/text_color"
+                    android:shadowDx="2"
+                    android:shadowRadius="2"
+                    android:text="Offering"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 2 -->
+        <!-- Column 3 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row_2_col_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="COVID-19"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/virus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:shadowColor="@color/text_color"
+                    android:shadowDx="2"
+                    android:shadowRadius="2"
+                    android:text="COVID-19"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 3 -->
+        <!-- Column 1 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row_3_col_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Website"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/ic_web" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:shadowColor="@color/text_color"
+                    android:shadowDx="2"
+                    android:shadowRadius="2"
+                    android:text="Website"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 3 -->
+        <!-- Column 2 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row_3_col_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Social Media"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/ic_chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:shadowColor="@color/text_color"
+                    android:shadowDx="2"
+                    android:shadowRadius="2"
+                    android:text="Social Media"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 3 -->
+        <!-- Column 3 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row_3_col_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Music"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/music" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/text_color"
+                    android:shadowDx="2"
+                    android:shadowRadius="2"
+                    android:text="Music"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/bottom_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:alignmentMode="alignMargins"
+        android:background="@color/cardview_shadow_end_color"
+        android:columnCount="5"
+        android:columnOrderPreserved="false"
+        android:rowCount="1">
+
+        <!--Row 1 -->
+        <!--Column 1 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row1_col1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            tools:ignore="PrivateResource">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/menu_home"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/home" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Row 1 -->
+        <!-- Column 2 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row1_col2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Bible"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/book_read_open" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Row 1 -->
+        <!-- Column 3 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row1_col3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Journal"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/edit_notes" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 1 -->
+        <!-- Column 4 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row1_col4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Download"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/download" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 1 -->
+        <!-- Column 5 -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/row1_col5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="Plans"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowDx="5"
+                    android:shadowRadius="5"
+                    android:src="@drawable/calendar_schedule" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:shadowColor="@color/design_default_color_on_secondary"
+        android:shadowDx="2"
+        android:shadowRadius="2"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:importantForAutofill="no"
+        android:text="@string/website"
+        android:textColor="@color/design_default_color_background" />
+</LinearLayout>
